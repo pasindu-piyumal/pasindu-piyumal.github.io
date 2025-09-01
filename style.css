@@ -477,6 +477,8 @@ section:nth-of-type(even){
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .certificate::before {
@@ -490,6 +492,7 @@ section:nth-of-type(even){
   transform: rotate(25deg);
   opacity: 0;
   transition: opacity 0.4s ease;
+   z-index: -1;
 }
 
 .certificate:hover::before {
